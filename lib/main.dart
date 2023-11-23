@@ -12,10 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UTS EDGINA - 2020130035',
-      theme: ThemeData(
-          // fontFamily: 'Abereto',
-          ),
+      title: 'MINI SOCCER BANDUNG',
+      theme: ThemeData(),
       home: const Home(),
     );
   }
