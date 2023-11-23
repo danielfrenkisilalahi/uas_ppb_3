@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MINI SOCCER BANDUNG',
+      title: 'MINI SOCCER SPOT FINDER BAUNDUNG',
       theme: ThemeData(),
       home: const Home(),
     );
