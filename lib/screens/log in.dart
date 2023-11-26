@@ -5,6 +5,15 @@ class LogIn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+        home: Scaffold(
+            body: Container(
+                width: double.infinity,
+                height: double.infinity,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/bg lapangan.jpeg'),
+                      fit: BoxFit.cover)),
+                )));
   }
 }
