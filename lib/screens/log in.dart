@@ -10,7 +10,7 @@ class LogIn extends StatelessWidget {
             body: Container(
                 width: double.infinity,
                 height: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('assets/images/bg lapangan.jpeg'),
                       fit: BoxFit.cover)),
