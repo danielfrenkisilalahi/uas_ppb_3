@@ -36,6 +36,9 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 70,
+                ),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -81,6 +84,20 @@ class Home extends StatelessWidget {
                           color: Color.fromARGB(255, 255, 255, 255)),
                     ),
                   ),
+                ),
+                Container(
+                  height: 25,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    gradient: const LinearGradient(
+                      colors: [
+                        Colors.white,
+                        Colors.white,
+                      ]
+                    )
+                  ),
+                  child: const Center(child: Text('Log In')),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,

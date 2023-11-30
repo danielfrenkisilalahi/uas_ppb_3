@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/screens/home.dart';
+import 'package:uas_ppb_3/screens/sign%20in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MINI SOCCER SPOT FINDER BANDUNG',
       theme: ThemeData(),
-      home: const Home(),
+      home: const SignIn(),
     );
   }
 }
