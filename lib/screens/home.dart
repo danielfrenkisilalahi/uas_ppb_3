@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                         fontSize: 20,
                         fontStyle: FontStyle.normal,
                       ),
-                      ),
+                    ),
                   ],
                 ),
                 const Column(
@@ -55,6 +55,15 @@ class Home extends StatelessWidget {
                           fontStyle: FontStyle.normal),
                     ),
                   ],
+                ),
+                Container(
+                  width: 250,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Enter Email Address',
+                      prefixIcon: Icon(Icons.email),
+                    ),
+                  ),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
