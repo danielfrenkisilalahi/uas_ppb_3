@@ -16,8 +16,8 @@ class Home extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
-            decoration:
-                const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
+            //decoration:
+            //const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -56,12 +56,29 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  width: 250,
-                  child: TextField(
-                    decoration: InputDecoration(
-                      labelText: 'Enter Email Address',
-                      prefixIcon: Icon(Icons.email),
+                const TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white)),
+                    suffixIcon: Icon(Icons.password_outlined),
+                    label: Text(
+                      'Enter Username',
+                      style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          color: Color.fromARGB(255, 255, 255, 255)),
+                    ),
+                  ),
+                ),
+                const TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white)),
+                    suffixIcon: Icon(Icons.password_outlined),
+                    label: Text(
+                      'Password',
+                      style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          color: Color.fromARGB(255, 255, 255, 255)),
                     ),
                   ),
                 ),
