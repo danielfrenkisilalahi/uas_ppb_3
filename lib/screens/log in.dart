@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/screens/log%20in.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class LogIn extends StatelessWidget {
+  const LogIn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,47 +56,47 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.circle_rounded,
-                          color: Color.fromARGB(255, 129, 127, 127),
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Color.fromARGB(255, 129, 127, 127),
-                          size: 10,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.circle,
-                          color: Color.fromARGB(255, 129, 127, 127),
-                          size: 10,
-                        ),
-                        SizedBox(
-                          height: 100,
-                        )
-                      ],
-                    ),
+                // Column(
+                //   crossAxisAlignment: CrossAxisAlignment.center,
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     const Row(
+                //       mainAxisAlignment: MainAxisAlignment.center,
+                //       children: [
+                //         Icon(
+                //           Icons.circle_rounded,
+                //           color: Color.fromARGB(255, 129, 127, 127),
+                //           size: 10,
+                //         ),
+                //         SizedBox(
+                //           width: 10,
+                //         ),
+                //         Icon(
+                //           Icons.circle,
+                //           color: Color.fromARGB(255, 255, 255, 255),
+                //           size: 10,
+                //         ),
+                //         SizedBox(
+                //           width: 10,
+                //         ),
+                //         Icon(
+                //           Icons.circle,
+                //           color: Color.fromARGB(255, 129, 127, 127),
+                //           size: 10,
+                //         ),
+                //         SizedBox(
+                //           width: 10,
+                //         ),
+                //         Icon(
+                //           Icons.circle,
+                //           color: Color.fromARGB(255, 129, 127, 127),
+                //           size: 10,
+                //         ),
+                //         SizedBox(
+                //           height: 100,
+                //         )
+                //       ],
+                //     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -142,9 +142,9 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 )
-              ],
+           //   ],
             ),
-          ),
+      //    ),
         ],
       ),
     );

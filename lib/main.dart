@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MINI SOCCER SPOT FINDER BANDUNG',
       theme: ThemeData(),
-      home: const SignIn(),
+      home: const Home(),
     );
   }
 }
