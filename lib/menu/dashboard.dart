@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -14,24 +15,41 @@ class Dashboard extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage('assets/images/bg lapangan.jpeg'),
                   fit: BoxFit.cover)),
-          child: const Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Silahkan Pilih lapangan",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal,
-                    ),
-                  ),
-                ],
-              )
+              const Text(
+                "Silahkan Pilih Lapangan.",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                    fontSize: 32,
+                    fontStyle: FontStyle.normal),
+              ),
+              const SizedBox(
+                height: 70,
+              ),
+              Image.asset(
+                'images/lapangan1.jpg',
+                height: 150,
+                fit: BoxFit.cover,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Image.asset(
+                'images/lapangan2.jpg',
+                height: 200,
+                fit: BoxFit.cover,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Image.asset(
+                'images/lapangan3.jpg',
+                height: 200,
+                fit: BoxFit.cover,
+              ),
             ],
           ),
         ),

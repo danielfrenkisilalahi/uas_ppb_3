@@ -1,10 +1,13 @@
-import 'package:flutter/material.dart';
+class Lapangan {
+  String? title;
+  String? image;
+  int? price;
+  String? description;
 
-class Lapangan extends StatelessWidget {
-  const Lapangan({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
+  Lapangan({
+    required this.title,
+    required this.image,
+    required this.price,
+    required this.description,
+  });
 }

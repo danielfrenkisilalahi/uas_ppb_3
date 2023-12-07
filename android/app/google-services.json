@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "586715551008",
+    "project_id": "bookingminisoccer",
+    "storage_bucket": "bookingminisoccer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586715551008:android:cf5b765b4aa05e84e9b345",
+        "android_client_info": {
+          "package_name": "com.example.uas_ppb_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lD6ZJ6S4t2XB01p1bNLpPjOh06Yuy0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
