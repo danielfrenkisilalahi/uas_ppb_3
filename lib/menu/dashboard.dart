@@ -29,26 +29,82 @@ class Dashboard extends StatelessWidget {
               const SizedBox(
                 height: 70,
               ),
-              Image.asset(
-                'images/lapangan1.jpg',
-                height: 150,
-                fit: BoxFit.cover,
+              Stack(
+                children: [
+                  GestureDetector(
+                    child: Image.asset('images/Lapangan1'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Lapangan1(),
+                        ),
+                      );
+                    },
+                  ),
+                  Center(
+                    child: Image.asset(
+                      'images/lapangan1.jpg',
+                      height: 150,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Center(
+                    child: Text(
+                      'Soccer Republic Pasteur',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontStyle: FontStyle.normal),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 20,
               ),
-              Image.asset(
-                'images/lapangan2.jpg',
-                height: 200,
-                fit: BoxFit.cover,
+              Stack(
+                children: [
+                  Center(
+                    child: Image.asset(
+                      'images/lapangan2.jpg',
+                      height: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Center(
+                    child: Text(
+                      'Rooftop Mini Soccer',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontStyle: FontStyle.normal),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 20,
               ),
-              Image.asset(
-                'images/lapangan3.jpg',
-                height: 200,
-                fit: BoxFit.cover,
+              Stack(
+                children: [
+                  Center(
+                    child: Image.asset(
+                      'images/lapangan3.jpg',
+                      height: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Center(
+                    child: Text(
+                      '',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontStyle: FontStyle.normal),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
