@@ -8,12 +8,12 @@ class Profil extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             body: Container(
-                width: double.infinity,
-                height: double.infinity,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/bg lapangan.jpeg'),
-                      fit: BoxFit.cover)),
-                )));
+      width: double.infinity,
+      height: double.infinity,
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/bg lapangan.jpeg'),
+              fit: BoxFit.cover)),
+    )));
   }
 }
