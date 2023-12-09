@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -31,24 +33,33 @@ class Dashboard extends StatelessWidget {
               ),
               Stack(
                 children: [
-                  GestureDetector(
-                    child: Image.asset('images/Lapangan1'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Lapangan1(),
-                        ),
-                      );
-                    },
-                  ),
+                  // GestureDetector(
+                  //   child: Image.asset('images/apangan1'),
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) => const Lapangan1(),
+                  //       ),
+                  //     );
+                  //   },
+                  // ),
                   Center(
-                    child: Image.asset(
-                      'images/lapangan1.jpg',
-                      height: 150,
-                      fit: BoxFit.cover,
+                    child: InkWell(
+                      child: Image.asset(
+                        'images/lapangan1.jpg',
+                        height: 150,
+                        fit: BoxFit.cover,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Lapangan1()));
+                      },
                     ),
                   ),
+
                   const Center(
                     child: Text(
                       'Soccer Republic Pasteur',
@@ -66,10 +77,18 @@ class Dashboard extends StatelessWidget {
               Stack(
                 children: [
                   Center(
-                    child: Image.asset(
-                      'images/lapangan2.jpg',
-                      height: 200,
-                      fit: BoxFit.cover,
+                    child: InkWell(
+                      child: Image.asset(
+                        'images/lapangan2.jpg',
+                        height: 200,
+                        fit: BoxFit.cover,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Lapangan2()));
+                      },
                     ),
                   ),
                   const Center(
@@ -89,10 +108,18 @@ class Dashboard extends StatelessWidget {
               Stack(
                 children: [
                   Center(
-                    child: Image.asset(
-                      'images/lapangan3.jpg',
-                      height: 200,
-                      fit: BoxFit.cover,
+                    child: InkWell(
+                      child: Image.asset(
+                        'images/lapangan3.jpg',
+                        height: 200,
+                        fit: BoxFit.cover,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Lapangan3()));
+                      },
                     ),
                   ),
                   const Center(
