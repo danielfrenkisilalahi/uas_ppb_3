@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/menu/dashboard.dart';
+import 'package:uas_ppb_3/menu/dashboard2.dart';
 import 'package:uas_ppb_3/screens/log%20in.dart';
 import 'package:uas_ppb_3/screens/sign%20in.dart';
 
@@ -13,30 +14,46 @@ class Home extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/bg lapangan.jpeg',
-            height: MediaQuery.of(context).size.height,
             fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          ),
+
+          Column(
+            children: [
+              Flexible(
+                  child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
+                child: RichText(
+                  textAlign: TextAlign.center,
+                  text: const TextSpan(children: [
+                    TextSpan(
+                      text: "Mini Soccer Spot Finder Bandung",
+                      style: TextStyle(
+                        fontFamily: "afacad",
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                        fontSize: 32,
+                        fontStyle: FontStyle.normal,
+                      ),
+                    )
+                  ]),
+                ),
+              )),
+            ],
           ),
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
               //decoration:
               //const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
+
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Mini Soccer Spot Finder Bandung",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontStyle: FontStyle.normal,
-                        ),
-                      ),
-                    ],
                   ),
                   const SizedBox(
                     height: 80,
@@ -53,7 +70,7 @@ class Home extends StatelessWidget {
                             fontStyle: FontStyle.normal),
                       ),
                       Text(
-                        "Masuk atau daftar untuk menyewa",
+                        "Ayo bikin akunnya!",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 17,
@@ -162,7 +179,7 @@ class Home extends StatelessWidget {
                         height: 50.0,
                         child: SizedBox.expand(
                           child: OutlinedButton(
-                             onPressed: () {
+                            onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(

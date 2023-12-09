@@ -11,8 +11,9 @@ class LogIn extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/bg lapangan.jpeg',
-            height: MediaQuery.of(context).size.height,
             fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
