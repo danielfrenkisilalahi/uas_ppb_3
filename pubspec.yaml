@@ -84,6 +84,10 @@ flutter:
       fonts:
         - asset: assets/fonts/Afacad-Regular.ttf
           weight: 100
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/DM Sans Bold.ttf
+          weight: 100
   # fonts:
   #   - family: Schyler
   #     fonts:

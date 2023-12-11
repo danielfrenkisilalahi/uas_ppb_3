@@ -115,61 +115,6 @@ class Home extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                         color: Color.fromARGB(255, 255, 255, 255)),
                   ),
-
-                  // Container(
-                  //   height: 25,
-                  //   width: 150,
-                  //   decoration: BoxDecoration(
-                  //       borderRadius: BorderRadius.circular(30),
-                  //       gradient: const LinearGradient(colors: [
-                  //         Colors.white,
-                  //         Colors.white,
-                  //       ])),
-                  //   child: const Center(
-                  //     child: Text('Log In'),
-                  //   ),
-                  // ),
-                  // Column(
-                  //   crossAxisAlignment: CrossAxisAlignment.center,
-                  //   mainAxisAlignment: MainAxisAlignment.center,
-                  //   children: [
-                  //     const Row(
-                  //       mainAxisAlignment: MainAxisAlignment.center,
-                  //       children: [
-                  //         Icon(
-                  //           Icons.circle_rounded,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 255, 255, 255),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           height: 100,
-                  //         )
-                  //       ],
-                  //     ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -183,7 +128,7 @@ class Home extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Dashboard()));
+                                      builder: (context) => const Dashboard2()));
                             },
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(

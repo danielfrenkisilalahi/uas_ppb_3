@@ -10,17 +10,12 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.location_on), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
-          ],
-          //currentIndex: _selectedIndex,
-          backgroundColor: Color.fromARGB(207, 216, 255, 223),
-          selectedItemColor: Color.fromARGB(255, 5, 5, 5),
-         // onTap: _onItemTap,
-        ),
+        bottomNavigationBar:
+            NavigationBar(height: 60, elevation: 0, destinations: [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.favorite), label: 'Likes'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profile')
+        ]),
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -44,17 +39,6 @@ class Dashboard extends StatelessWidget {
               ),
               Stack(
                 children: [
-                  // GestureDetector(
-                  //   child: Image.asset('images/apangan1'),
-                  //   onTap: () {
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //         builder: (context) => const Lapangan1(),
-                  //       ),
-                  //     );
-                  //   },
-                  // ),
                   Center(
                     child: InkWell(
                       child: Image.asset(
@@ -70,7 +54,6 @@ class Dashboard extends StatelessWidget {
                       },
                     ),
                   ),
-
                   const Center(
                     child: Text(
                       'Soccer Republic Pasteur',
