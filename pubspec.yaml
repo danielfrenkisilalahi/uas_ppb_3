@@ -88,6 +88,10 @@ flutter:
       fonts:
         - asset: assets/fonts/DM Sans Bold.ttf
           weight: 100
+    - family: Ruluko
+      fonts:
+        - asset: assets/fonts/Ruluko-Regular.ttf
+          weight: 100
   # fonts:
   #   - family: Schyler
   #     fonts:

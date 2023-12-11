@@ -1,13 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
-import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
-import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 import 'package:uas_ppb_3/firebase_options.dart';
-import 'package:uas_ppb_3/menu/dashboard.dart';
-import 'package:uas_ppb_3/menu/lapangan.dart';
+
 import 'package:uas_ppb_3/screens/home.dart';
-import 'package:uas_ppb_3/screens/sign%20in.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
