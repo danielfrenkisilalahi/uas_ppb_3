@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/menu/dashboard.dart';
-import 'package:uas_ppb_3/menu/dashboard2.dart';
 import 'package:uas_ppb_3/screens/log%20in.dart';
 import 'package:uas_ppb_3/screens/sign%20in.dart';
 
@@ -128,7 +127,7 @@ class Home extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Dashboard2()));
+                                      builder: (context) => const Dashboard()));
                             },
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(
