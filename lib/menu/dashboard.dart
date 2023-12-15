@@ -382,7 +382,7 @@ class Dashboard extends StatelessWidget {
                                                 ),
                                               ),
                                               Text(
-                                                "Harga mulai: Rp. 375.000",
+                                                "Harga : Rp. 375.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
@@ -458,7 +458,7 @@ class Dashboard extends StatelessWidget {
                                                 ),
                                               ),
                                               Text(
-                                                "Harga mulai: Rp. 400.000",
+                                                "Harga : Rp. 400.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
@@ -534,7 +534,7 @@ class Dashboard extends StatelessWidget {
                                                 ),
                                               ),
                                               Text(
-                                                "Harga mulai: Rp. 700.000",
+                                                "Harga : Rp. 700.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
