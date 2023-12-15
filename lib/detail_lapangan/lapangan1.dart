@@ -144,134 +144,235 @@ class Lapangan1 extends StatelessWidget {
 //   }
 // }
     return Scaffold(
-        backgroundColor: Color.fromARGB(108, 231, 231, 231),
-        body: SingleChildScrollView(
-            child: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.only(top: 30, bottom: 20),
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Padding(
-                  padding: EdgeInsets.only(left: 1),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: MaterialButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Dashboard()));
-                      },
-                      child: const Icon(
-                        Icons.arrow_back_ios_new,
-                      ),
+      backgroundColor: const Color.fromARGB(108, 231, 231, 231),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height / 2.1,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(
+                      "images/lapangan1.jpg",
                     ),
-                  )),
-              Padding(
-                padding: EdgeInsets.all(16),
-                child: Image.asset(
-                  'images/lapangan1.jpg',
-                  height: 120,
-                  width: 150,
-                ),
+                    fit: BoxFit.cover),
               ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, bottom: 50),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        InkWell(
+                            onTap: () {
+                              Navigator.pop(context);
+                            },
+                            child: MaterialButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const Dashboard()));
+                              },
+                              child: Container(
+                                margin: const EdgeInsets.all(5),
+                                height: 35,
+                                width: 35,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: const Center(
+                                  child: Icon(
+                                    Icons.arrow_back,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              ),
+                            )),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
                       "Soccer Republic Pasteur",
+                      textAlign: TextAlign.left,
                       style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: 'DM Sans',
+                        fontSize: 35,
+                        fontFamily: "Ruluko",
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
+            ),
+            const SizedBox(height: 1),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          "Rp. 375.000",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+
+            const SizedBox(height: 15),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
                       "Fasilitas",
+                      textAlign: TextAlign.left,
                       style: TextStyle(
-                        fontSize: 18,
-                        fontFamily: 'DM Sans',
+                        fontSize: 30,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              SizedBox(
-                width: 20,
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "- Toilet",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'DM Sans',
-                      ),
+            ),
+            // SizedBox(height: 10),
+            // SingleChildScrollView(
+            //   scrollDirection: Axis.horizontal,
+            // child:
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+              child: Row(children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 165, 161, 161),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(115, 211, 199, 199),
+                          )
+                        ]),
+                    child: Text(
+                      "Toilet",
+                      style: TextStyle(fontSize: 20),
                     ),
-                  ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "- Bola",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'DM Sans',
-                      ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 165, 161, 161),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(115, 211, 199, 199),
+                          )
+                        ]),
+                    child: Text(
+                      "Tribun",
+                      style: TextStyle(fontSize: 20),
                     ),
-                  ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "- Warung",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'DM Sans',
-                      ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 165, 161, 161),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(115, 211, 199, 199),
+                          )
+                        ]),
+                    child: Text(
+                      "Warung",
+                      style: TextStyle(fontSize: 20),
                     ),
-                  ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5, left: 30, right: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "- Tribun",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'DM Sans',
-                      ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 165, 161, 161),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(115, 211, 199, 199),
+                          )
+                        ]),
+                    child: Text(
+                      "Bola",
+                      style: TextStyle(fontSize: 20),
                     ),
-                  ],
+                  ),
                 ),
+              ]),
+            ),
+
+            SizedBox(
+              height: 30,
+            ),
+            InkWell(
+              onTap: () {},
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Dashboard()));
+                },
+                child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(104, 11, 1, 12),
+                        borderRadius: BorderRadius.circular(5)),
+                    child: Center(
+                      child: Text("Booking",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          )),
+                    )),
               ),
-            ]),
-          ),
-        )));
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -267,7 +267,7 @@ class Dashboard extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const Lapangan2()));
+                                                    const Lapangan3()));
                                       },
                                     ),
                                   ),
@@ -299,7 +299,7 @@ class Dashboard extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const Lapangan3()));
+                                                    const Lapangan2()));
                                       },
                                     ),
                                   ),
@@ -362,7 +362,7 @@ class Dashboard extends StatelessWidget {
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        const Lapangan2()));
+                                                        const Lapangan1()));
                                           },
                                         ),
                                         Container(
@@ -430,7 +430,7 @@ class Dashboard extends StatelessWidget {
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        const Lapangan3()));
+                                                        const Lapangan2()));
                                           },
                                         ),
                                         Container(
@@ -498,7 +498,7 @@ class Dashboard extends StatelessWidget {
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        const Lapangan2()));
+                                                        const Lapangan3()));
                                           },
                                         ),
                                         Container(

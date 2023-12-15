@@ -92,6 +92,11 @@ flutter:
       fonts:
         - asset: assets/fonts/Ruluko-Regular.ttf
           weight: 100
+    - family: Libre
+      fonts:
+        - asset: assets/fonts/LibreBaskerville-Regular.ttf
+          weight: 100
+
   # fonts:
   #   - family: Schyler
   #     fonts:
