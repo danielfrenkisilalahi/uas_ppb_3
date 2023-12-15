@@ -168,34 +168,60 @@ class Lapangan1 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                            onTap: () {
-                              Navigator.pop(context);
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: MaterialButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
                             },
-                            child: MaterialButton(
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const Dashboard()));
-                              },
-                              child: Container(
-                                margin: const EdgeInsets.all(5),
-                                height: 35,
-                                width: 35,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: const Center(
-                                  child: Icon(
-                                    Icons.arrow_back,
-                                    color: Colors.black,
-                                    size: 20,
-                                  ),
+                            child: Container(
+                              margin: const EdgeInsets.all(5),
+                              height: 35,
+                              width: 35,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.arrow_back,
+                                  color: Colors.black,
+                                  size: 20,
                                 ),
                               ),
-                            )),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
+                            },
+                            child: Container(
+                              margin: const EdgeInsets.all(10),
+                              height: 35,
+                              width: 35,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.home,
+                                  //color: Colors.black,
+                                  size: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
@@ -270,72 +296,54 @@ class Lapangan1 extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
               child: Row(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Toilet",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
-                      "Tribun",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Container(
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 165, 161, 161),
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromARGB(115, 211, 199, 199),
-                          )
-                        ]),
-                    child: Text(
+                    child: const Text(
                       "Warung",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Bola",
                       style: TextStyle(fontSize: 20),
                     ),
@@ -344,7 +352,7 @@ class Lapangan1 extends StatelessWidget {
               ]),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             InkWell(
@@ -359,9 +367,9 @@ class Lapangan1 extends StatelessWidget {
                 child: Container(
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(104, 11, 1, 12),
+                        color: const Color.fromARGB(104, 11, 1, 12),
                         borderRadius: BorderRadius.circular(5)),
-                    child: Center(
+                    child: const Center(
                       child: Text("Booking",
                           style: TextStyle(
                             color: Colors.white,

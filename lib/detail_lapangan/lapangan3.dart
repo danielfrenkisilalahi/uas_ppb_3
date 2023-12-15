@@ -157,7 +157,7 @@ class Lapangan3 extends StatelessWidget {
 //   }
 // }
 
-     return Scaffold(
+    return Scaffold(
       backgroundColor: const Color.fromARGB(108, 231, 231, 231),
       body: SingleChildScrollView(
         child: Column(
@@ -284,72 +284,72 @@ class Lapangan3 extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
               child: Row(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Toilet",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Tribun",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Warung",
                       style: TextStyle(fontSize: 20),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 165, 161, 161),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color.fromARGB(115, 211, 199, 199),
                           )
                         ]),
-                    child: Text(
+                    child: const Text(
                       "Bola",
                       style: TextStyle(fontSize: 20),
                     ),
@@ -358,7 +358,7 @@ class Lapangan3 extends StatelessWidget {
               ]),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             InkWell(
@@ -373,9 +373,9 @@ class Lapangan3 extends StatelessWidget {
                 child: Container(
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(104, 11, 1, 12),
+                        color: const Color.fromARGB(104, 11, 1, 12),
                         borderRadius: BorderRadius.circular(5)),
-                    child: Center(
+                    child: const Center(
                       child: Text("Booking",
                           style: TextStyle(
                             color: Colors.white,
