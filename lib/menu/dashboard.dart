@@ -147,11 +147,11 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(248, 248, 248, 0.663),
+        backgroundColor: const Color.fromRGBO(248, 248, 248, 0.663),
         bottomNavigationBar: NavigationBar(
           height: 70,
           elevation: 0,
-          destinations: [
+          destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: 'home'),
             NavigationDestination(
                 icon: Icon(Icons.favorite), label: 'favorite'),
@@ -162,12 +162,12 @@ class Dashboard extends StatelessWidget {
         body: SingleChildScrollView(
             child: SafeArea(
                 child: Padding(
-                    padding: EdgeInsets.only(top: 30, bottom: 20),
+                    padding: const EdgeInsets.only(top: 30, bottom: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                            padding: EdgeInsets.only(left: 1),
+                            padding: const EdgeInsets.only(left: 1),
                             child: InkWell(
                               onTap: () {
                                 Navigator.pop(context);
@@ -186,41 +186,42 @@ class Dashboard extends StatelessWidget {
                             )),
                         Container(
                           alignment: Alignment.centerLeft,
-                          padding: EdgeInsets.only(left: 20, top: 20),
-                          child: Column(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Column(
                             children: [
                               Text(
                                 "Lapangan Tersedia",
                                 style: TextStyle(
                                   fontFamily: "DM Sans",
                                   fontSize: 25,
-                                  color: const Color.fromARGB(255, 12, 12, 12),
+                                  color: Color.fromARGB(255, 12, 12, 12),
                                   fontWeight: FontWeight.bold,
                                 ),
                               )
                             ],
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 vertical: 15, horizontal: 5),
                             child: Row(
                               children: [
                                 //lapangan 1
                                 Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   child: Container(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     decoration: BoxDecoration(
                                         color: const Color.fromARGB(
                                             255, 165, 161, 161),
                                         borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
-                                            color: const Color.fromARGB(
+                                            color: Color.fromARGB(
                                                 115, 245, 241, 241),
                                           )
                                         ]),
@@ -243,16 +244,17 @@ class Dashboard extends StatelessWidget {
 
                                 //lapangan 2
                                 Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   child: Container(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     decoration: BoxDecoration(
                                         color: const Color.fromARGB(
                                             255, 165, 161, 161),
                                         borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
-                                            color: const Color.fromARGB(
+                                            color: Color.fromARGB(
                                                 115, 245, 241, 241),
                                           )
                                         ]),
@@ -275,16 +277,17 @@ class Dashboard extends StatelessWidget {
 
                                 //lapangan 3
                                 Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   child: Container(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     decoration: BoxDecoration(
                                         color: const Color.fromARGB(
                                             255, 165, 161, 161),
                                         borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
-                                            color: const Color.fromARGB(
+                                            color: Color.fromARGB(
                                                 115, 245, 241, 241),
                                           )
                                         ]),
@@ -308,18 +311,18 @@ class Dashboard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Container(
                           alignment: Alignment.centerLeft,
-                          padding: EdgeInsets.only(left: 20, top: 20),
-                          child: Column(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Column(
                             children: [
                               Text(
                                 "Pilih Lapangan",
                                 style: TextStyle(
                                   fontFamily: "DM Sans",
                                   fontSize: 25,
-                                  color: const Color.fromARGB(255, 12, 12, 12),
+                                  color: Color.fromARGB(255, 12, 12, 12),
                                   fontWeight: FontWeight.bold,
                                 ),
                               )
@@ -328,18 +331,19 @@ class Dashboard extends StatelessWidget {
                         ),
                         SingleChildScrollView(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 vertical: 10, horizontal: 10),
                             child: Column(
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 10),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
                                     width: 380,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 226, 226, 226),
+                                        color: const Color.fromARGB(
+                                            255, 226, 226, 226),
                                         borderRadius: BorderRadius.circular(10),
                                         boxShadow: [
                                           BoxShadow(
@@ -347,7 +351,7 @@ class Dashboard extends StatelessWidget {
                                                   Colors.grey.withOpacity(0.5),
                                               spreadRadius: 3,
                                               blurRadius: 10,
-                                              offset: Offset(0, 3)),
+                                              offset: const Offset(0, 3)),
                                         ]),
                                     child: Row(
                                       children: [
@@ -365,7 +369,7 @@ class Dashboard extends StatelessWidget {
                                                         const Lapangan1()));
                                           },
                                         ),
-                                        Container(
+                                        SizedBox(
                                           width: 190,
                                           child: Column(
                                             crossAxisAlignment:
@@ -373,7 +377,7 @@ class Dashboard extends StatelessWidget {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceAround,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "Soccer Republic Pasteur",
                                                 style: TextStyle(
                                                   fontSize: 15,
@@ -381,14 +385,14 @@ class Dashboard extends StatelessWidget {
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
-                                              Text(
+                                              const Text(
                                                 "Harga : Rp. 375.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
                                               InkWell(
-                                                  child: Text(
+                                                  child: const Text(
                                                     "Lihat detail",
                                                     style: TextStyle(
                                                       fontSize: 15,
@@ -409,13 +413,14 @@ class Dashboard extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 10),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
                                     width: 380,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 226, 226, 226),
+                                        color: const Color.fromARGB(
+                                            255, 226, 226, 226),
                                         borderRadius: BorderRadius.circular(10),
                                         boxShadow: [
                                           BoxShadow(
@@ -423,7 +428,7 @@ class Dashboard extends StatelessWidget {
                                                   Colors.grey.withOpacity(0.5),
                                               spreadRadius: 3,
                                               blurRadius: 10,
-                                              offset: Offset(0, 3)),
+                                              offset: const Offset(0, 3)),
                                         ]),
                                     child: Row(
                                       children: [
@@ -441,7 +446,7 @@ class Dashboard extends StatelessWidget {
                                                         const Lapangan2()));
                                           },
                                         ),
-                                        Container(
+                                        SizedBox(
                                           width: 190,
                                           child: Column(
                                             crossAxisAlignment:
@@ -449,7 +454,7 @@ class Dashboard extends StatelessWidget {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceAround,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "MV Arena",
                                                 style: TextStyle(
                                                   fontSize: 15,
@@ -457,14 +462,14 @@ class Dashboard extends StatelessWidget {
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
-                                              Text(
+                                              const Text(
                                                 "Harga : Rp. 400.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
                                               InkWell(
-                                                  child: Text(
+                                                  child: const Text(
                                                     "Lihat detail",
                                                     style: TextStyle(
                                                       fontSize: 15,
@@ -485,13 +490,14 @@ class Dashboard extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 10),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
                                     width: 380,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 226, 226, 226),
+                                        color: const Color.fromARGB(
+                                            255, 226, 226, 226),
                                         borderRadius: BorderRadius.circular(10),
                                         boxShadow: [
                                           BoxShadow(
@@ -499,7 +505,7 @@ class Dashboard extends StatelessWidget {
                                                   Colors.grey.withOpacity(0.5),
                                               spreadRadius: 3,
                                               blurRadius: 10,
-                                              offset: Offset(0, 3)),
+                                              offset: const Offset(0, 3)),
                                         ]),
                                     child: Row(
                                       children: [
@@ -517,7 +523,7 @@ class Dashboard extends StatelessWidget {
                                                         const Lapangan3()));
                                           },
                                         ),
-                                        Container(
+                                        SizedBox(
                                           width: 190,
                                           child: Column(
                                             crossAxisAlignment:
@@ -525,7 +531,7 @@ class Dashboard extends StatelessWidget {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceAround,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "Rooftop Mini Soccer",
                                                 style: TextStyle(
                                                   fontSize: 15,
@@ -533,14 +539,14 @@ class Dashboard extends StatelessWidget {
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
-                                              Text(
+                                              const Text(
                                                 "Harga : Rp. 700.000",
                                                 style: TextStyle(
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
                                               InkWell(
-                                                  child: Text(
+                                                  child: const Text(
                                                     "Lihat detail",
                                                     style: TextStyle(
                                                       fontSize: 15,
