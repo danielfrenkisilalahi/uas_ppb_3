@@ -387,12 +387,20 @@ class Dashboard extends StatelessWidget {
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
-                                              Text(
-                                                "Lihat detail",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                ),
-                                              ),
+                                              InkWell(
+                                                  child: Text(
+                                                    "Lihat detail",
+                                                    style: TextStyle(
+                                                      fontSize: 15,
+                                                    ),
+                                                  ),
+                                                  onTap: () {
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                            builder: (context) =>
+                                                                const Lapangan1()));
+                                                  }),
                                             ],
                                           ),
                                         )
@@ -455,12 +463,20 @@ class Dashboard extends StatelessWidget {
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
-                                              Text(
-                                                "Lihat detail",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                ),
-                                              ),
+                                              InkWell(
+                                                  child: Text(
+                                                    "Lihat detail",
+                                                    style: TextStyle(
+                                                      fontSize: 15,
+                                                    ),
+                                                  ),
+                                                  onTap: () {
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                            builder: (context) =>
+                                                                const Lapangan2()));
+                                                  }),
                                             ],
                                           ),
                                         )
@@ -523,12 +539,20 @@ class Dashboard extends StatelessWidget {
                                                     fontSize: 15,
                                                     color: Colors.red),
                                               ),
-                                              Text(
-                                                "Lihat detail",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                ),
-                                              ),
+                                              InkWell(
+                                                  child: Text(
+                                                    "Lihat detail",
+                                                    style: TextStyle(
+                                                      fontSize: 15,
+                                                    ),
+                                                  ),
+                                                  onTap: () {
+                                                    Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                            builder: (context) =>
+                                                                const Lapangan2()));
+                                                  }),
                                             ],
                                           ),
                                         )
