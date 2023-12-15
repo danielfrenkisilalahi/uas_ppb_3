@@ -148,17 +148,6 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color.fromRGBO(248, 248, 248, 0.663),
-        bottomNavigationBar: NavigationBar(
-          height: 70,
-          elevation: 0,
-          destinations: const [
-            NavigationDestination(icon: Icon(Icons.home), label: 'home'),
-            NavigationDestination(
-                icon: Icon(Icons.favorite), label: 'favorite'),
-            NavigationDestination(icon: Icon(Icons.person), label: 'profil'),
-          ],
-          backgroundColor: const Color.fromARGB(207, 232, 255, 254),
-        ),
         body: SingleChildScrollView(
             child: SafeArea(
                 child: Padding(

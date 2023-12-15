@@ -168,34 +168,34 @@ class Lapangan1 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                            onTap: () {
-                              Navigator.pop(context);
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: MaterialButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
                             },
-                            child: MaterialButton(
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const Dashboard()));
-                              },
-                              child: Container(
-                                margin: const EdgeInsets.all(5),
-                                height: 35,
-                                width: 35,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: const Center(
-                                  child: Icon(
-                                    Icons.arrow_back,
-                                    color: Colors.black,
-                                    size: 20,
-                                  ),
+                            child: Container(
+                              margin: const EdgeInsets.all(5),
+                              height: 35,
+                              width: 35,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.arrow_back,
+                                  color: Colors.black,
+                                  size: 20,
                                 ),
                               ),
-                            )),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
