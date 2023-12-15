@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/firebase_options.dart';
+import 'package:uas_ppb_3/menu/booking.dart';
 
 import 'package:uas_ppb_3/screens/home.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MINI SOCCER SPOT FINDER BANDUNG',
       theme: ThemeData(),
-      home: const Home(),
+      home: const Booking(),
     );
   }
 }

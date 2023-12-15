@@ -9,140 +9,6 @@ class Lapangan1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         body: Container(
-//           width: double.infinity,
-//           height: double.infinity,
-//           decoration: const BoxDecoration(
-//               image: DecorationImage(
-//                   image: AssetImage('assets/images/bg lapangan.jpeg'),
-//                   fit: BoxFit.cover)),
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.start,
-//             children: [
-//               const Text(
-//                 "Soccer Republic Pasteur.",
-//                 style: TextStyle(
-//                     fontWeight: FontWeight.w600,
-//                     color: Colors.white,
-//                     fontSize: 32,
-//                     fontStyle: FontStyle.normal),
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               Stack(
-//                 children: [
-//                   Center(
-//                     child: Image.asset(
-//                       'images/lapangan1.jpg',
-//                       height: 150,
-//                       fit: BoxFit.cover,
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "Fasilitas:",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 32,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 20,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Toilet",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Bola",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Warung",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Tribun",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "Harga : Rp.375.000-Rp.500.000 per jam",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.end,
-//                 children: [
-//                   Icon(Icons.add_chart),
-//                 ],
-//               )
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
     return Scaffold(
       backgroundColor: const Color.fromARGB(108, 231, 231, 231),
       body: SingleChildScrollView(
@@ -189,9 +55,33 @@ class Lapangan1 extends StatelessWidget {
                               child: const Center(
                                 child: Icon(
                                   Icons.arrow_back,
-                                  color: Colors.black,
+                                  //color: Colors.black,
                                   size: 20,
                                 ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const Dashboard()));
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.all(10),
+                            height: 35,
+                            width: 35,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Center(
+                              child: Icon(
+                                Icons.home,
+                                //color: Colors.black,
+                                size: 20,
                               ),
                             ),
                           ),
