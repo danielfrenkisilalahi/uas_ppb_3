@@ -112,7 +112,7 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'images/lapangan3.jpg',
+                                        'assets/images/lapangan3.jpg',
                                         height: 150,
                                         fit: BoxFit.none,
                                       ),
@@ -145,7 +145,7 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'images/lapangan2.jpg',
+                                        'assets/images/lapangan2.jpg',
                                         height: 150,
                                         fit: BoxFit.none,
                                       ),
@@ -191,38 +191,39 @@ class Dashboard extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
-                                    width: 380,
+                                    width: double.infinity,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color: const Color.fromARGB(
-                                            255, 226, 226, 226),
-                                        borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: const Offset(0, 3)),
-                                        ]),
+                                      color: const Color.fromARGB(
+                                          255, 226, 226, 226),
+                                      borderRadius: BorderRadius.circular(10),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 3,
+                                            blurRadius: 10,
+                                            offset: const Offset(0, 3)),
+                                      ],
+                                    ),
                                     child: Row(
                                       children: [
-                                        InkWell(
-                                          child: Image.asset(
-                                            'assets/images/lapangan1.jpg',
-                                            height: 100,
-                                            width: 150,
+                                        Expanded(
+                                          child: InkWell(
+                                            child: Image.asset(
+                                              'assets/images/lapangan1.jpg',
+                                              height: 100,
+                                              width: 150,
+                                            ),
+                                            onTap: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const Lapangan1()));
+                                            },
                                           ),
-                                          onTap: () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        const Lapangan1()));
-                                          },
                                         ),
-                                        SizedBox(
-                                          width: 190,
+                                        Expanded(
                                           child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
@@ -255,7 +256,7 @@ class Dashboard extends StatelessWidget {
                                                         context,
                                                         MaterialPageRoute(
                                                             builder: (context) =>
-                                                                const Lapangan2()));
+                                                                const Lapangan1()));
                                                   }),
                                             ],
                                           ),
@@ -268,38 +269,39 @@ class Dashboard extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
-                                    width: 380,
+                                    width: double.infinity,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color: const Color.fromARGB(
-                                            255, 226, 226, 226),
-                                        borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: const Offset(0, 3)),
-                                        ]),
+                                      color: const Color.fromARGB(
+                                          255, 226, 226, 226),
+                                      borderRadius: BorderRadius.circular(10),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 3,
+                                            blurRadius: 10,
+                                            offset: const Offset(0, 3)),
+                                      ],
+                                    ),
                                     child: Row(
                                       children: [
-                                        InkWell(
-                                          child: Image.asset(
-                                            'images/lapangan3.jpg',
-                                            height: 100,
-                                            width: 150,
+                                        Expanded(
+                                          child: InkWell(
+                                            child: Image.asset(
+                                              'assets/images/lapangan3.jpg',
+                                              height: 100,
+                                              width: 150,
+                                            ),
+                                            onTap: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const Lapangan2()));
+                                            },
                                           ),
-                                          onTap: () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        const Lapangan2()));
-                                          },
                                         ),
-                                        SizedBox(
-                                          width: 190,
+                                        Expanded(
                                           child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
@@ -345,38 +347,39 @@ class Dashboard extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Container(
-                                    width: 380,
+                                    width: double.infinity,
                                     height: 150,
                                     decoration: BoxDecoration(
-                                        color: const Color.fromARGB(
-                                            255, 226, 226, 226),
-                                        borderRadius: BorderRadius.circular(10),
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: const Offset(0, 3)),
-                                        ]),
+                                      color: const Color.fromARGB(
+                                          255, 226, 226, 226),
+                                      borderRadius: BorderRadius.circular(10),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.grey.withOpacity(0.5),
+                                            spreadRadius: 3,
+                                            blurRadius: 10,
+                                            offset: const Offset(0, 3)),
+                                      ],
+                                    ),
                                     child: Row(
                                       children: [
-                                        InkWell(
-                                          child: Image.asset(
-                                            'images/lapangan2.jpg',
-                                            height: 100,
-                                            width: 150,
+                                        Expanded(
+                                          child: InkWell(
+                                            child: Image.asset(
+                                              'assets/images/lapangan2.jpg',
+                                              height: 100,
+                                              width: 150,
+                                            ),
+                                            onTap: () {
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const Lapangan3()));
+                                            },
                                           ),
-                                          onTap: () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        const Lapangan3()));
-                                          },
                                         ),
-                                        SizedBox(
-                                          width: 190,
+                                        Expanded(
                                           child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
@@ -384,7 +387,7 @@ class Dashboard extends StatelessWidget {
                                                 MainAxisAlignment.spaceAround,
                                             children: [
                                               const Text(
-                                                "Rooftop Mini Soccer",
+                                                "Rooftop Arena",
                                                 style: TextStyle(
                                                   fontSize: 15,
                                                   fontFamily: "Ruluko",
@@ -409,7 +412,7 @@ class Dashboard extends StatelessWidget {
                                                         context,
                                                         MaterialPageRoute(
                                                             builder: (context) =>
-                                                                const Lapangan2()));
+                                                                const Lapangan3()));
                                                   }),
                                             ],
                                           ),

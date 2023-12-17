@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 import 'package:uas_ppb_3/main.dart';
-import 'package:uas_ppb_3/menu/booking.dart';
 import 'package:uas_ppb_3/menu/dashboard.dart';
 
 class Lapangan3 extends StatelessWidget {
@@ -20,7 +19,7 @@ class Lapangan3 extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "images/lapangan2.jpg",
+                      "assets/images/lapangan2.jpg",
                     ),
                     fit: BoxFit.cover),
               ),
@@ -34,34 +33,60 @@ class Lapangan3 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         InkWell(
-                            onTap: () {
-                              Navigator.pop(context);
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: MaterialButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
                             },
-                            child: MaterialButton(
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const Dashboard()));
-                              },
-                              child: Container(
-                                margin: const EdgeInsets.all(5),
-                                height: 35,
-                                width: 35,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: const Center(
-                                  child: Icon(
-                                    Icons.arrow_back,
-                                    color: Colors.black,
-                                    size: 20,
-                                  ),
+                            child: Container(
+                              margin: const EdgeInsets.all(5),
+                              height: 35,
+                              width: 35,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.arrow_back,
+                                  color: Colors.black,
+                                  size: 20,
                                 ),
                               ),
-                            )),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Dashboard()));
+                            },
+                            child: Container(
+                              margin: const EdgeInsets.all(10),
+                              height: 35,
+                              width: 35,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.home,
+                                  color: Colors.black,
+                                  size: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
@@ -88,7 +113,7 @@ class Lapangan3 extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 1),
+            const SizedBox(height: 5),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: Column(
@@ -99,7 +124,7 @@ class Lapangan3 extends StatelessWidget {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          "Rp. 700.000",
+                          "Rp. 700.000 / jam",
                           style: TextStyle(fontSize: 20),
                         ),
                       ),
@@ -109,7 +134,7 @@ class Lapangan3 extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: Column(
@@ -118,10 +143,11 @@ class Lapangan3 extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Fasilitas",
+                      "Fasilitas tersedia",
                       textAlign: TextAlign.left,
                       style: TextStyle(
-                        fontSize: 30,
+                        fontFamily: "Calibri",
+                        fontSize: 23,
                       ),
                     ),
                   ),
@@ -148,8 +174,26 @@ class Lapangan3 extends StatelessWidget {
                           )
                         ]),
                     child: const Text(
+                      "Bola",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 165, 161, 161),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color.fromARGB(115, 211, 199, 199),
+                          )
+                        ]),
+                    child: const Text(
                       "Toilet",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 15),
                     ),
                   ),
                 ),
@@ -167,7 +211,7 @@ class Lapangan3 extends StatelessWidget {
                         ]),
                     child: const Text(
                       "Tribun",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 15),
                     ),
                   ),
                 ),
@@ -185,55 +229,30 @@ class Lapangan3 extends StatelessWidget {
                         ]),
                     child: const Text(
                       "Warung",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 165, 161, 161),
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Color.fromARGB(115, 211, 199, 199),
-                          )
-                        ]),
-                    child: const Text(
-                      "Bola",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 15),
                     ),
                   ),
                 ),
               ]),
             ),
 
-            const SizedBox(
-              height: 30,
-            ),
-            InkWell(
-              onTap: () {},
-              child: MaterialButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Booking()));
-                },
-                child: Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(104, 11, 1, 12),
-                        borderRadius: BorderRadius.circular(5)),
-                    child: const Center(
-                      child: Text("Booking",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          )),
-                    )),
+            const SizedBox(height: 15),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Untuk pemesanan lebih lanjut, silakan hubungi 0811-1112-0415",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(fontSize: 18, fontFamily: "Calibri"),
+                    ),
+                  ),
+                ],
               ),
-            )
+            ),
           ],
         ),
       ),
