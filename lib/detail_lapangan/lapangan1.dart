@@ -20,7 +20,7 @@ class Lapangan1 extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "images/lapangan1.jpg",
+                      "assets/images/lapangan1.jpg",
                     ),
                     fit: BoxFit.cover),
               ),
@@ -226,7 +226,7 @@ class Lapangan1 extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const Dashboard()));
+                          builder: (context) => const Booking()));
                 },
                 child: Container(
                     height: 50,
@@ -238,8 +238,11 @@ class Lapangan1 extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
-                          )),
-                    )),
+                          ),
+                      ),
+
+                    ),
+                ),
               ),
             )
           ],

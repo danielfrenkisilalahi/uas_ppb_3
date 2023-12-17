@@ -194,7 +194,7 @@ class Lapangan2 extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "images/lapangan3.jpg",
+                      "assets/images/lapangan1.jpg",
                     ),
                     fit: BoxFit.cover),
               ),
@@ -376,7 +376,7 @@ class Lapangan2 extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const Dashboard()));
+                          builder: (context) => const Booking()));
                 },
                 child: Container(
                     height: 50,

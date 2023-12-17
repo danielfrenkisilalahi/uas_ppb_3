@@ -216,9 +216,9 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'images/lapangan1.jpg',
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                        'assets/images/lapangan1.jpg',
+                                        height: 150,
+                                        fit: BoxFit.none,
                                       ),
                                       onTap: () {
                                         Navigator.push(
@@ -249,9 +249,9 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'images/lapangan2.jpg',
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                        'assets/images/lapangan1.jpg',
+                                        height: 150,
+                                        fit: BoxFit.none,
                                       ),
                                       onTap: () {
                                         Navigator.push(
@@ -282,9 +282,9 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'images/lapangan3.jpg',
-                                        height: 100,
-                                        fit: BoxFit.cover,
+                                        'assets/images/lapangan1.jpg',
+                                        height: 150,
+                                        fit: BoxFit.none,
                                       ),
                                       onTap: () {
                                         Navigator.push(
@@ -346,7 +346,7 @@ class Dashboard extends StatelessWidget {
                                       children: [
                                         InkWell(
                                           child: Image.asset(
-                                            'images/lapangan1.jpg',
+                                            'assets/images/lapangan1.jpg',
                                             height: 100,
                                             width: 150,
                                           ),
@@ -423,8 +423,8 @@ class Dashboard extends StatelessWidget {
                                       children: [
                                         InkWell(
                                           child: Image.asset(
-                                            'images/lapangan3.jpg',
-                                            height: 120,
+                                            'assets/images/lapangan1.jpg',
+                                            height: 100,
                                             width: 150,
                                           ),
                                           onTap: () {
@@ -500,8 +500,8 @@ class Dashboard extends StatelessWidget {
                                       children: [
                                         InkWell(
                                           child: Image.asset(
-                                            'images/lapangan2.jpg',
-                                            height: 120,
+                                            'assets/images/lapangan1.jpg',
+                                            height: 100,
                                             width: 150,
                                           ),
                                           onTap: () {
