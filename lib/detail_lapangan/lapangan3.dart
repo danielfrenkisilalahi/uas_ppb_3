@@ -9,154 +9,6 @@ class Lapangan3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         body: Container(
-//           width: double.infinity,
-//           height: double.infinity,
-//           decoration: const BoxDecoration(
-//               image: DecorationImage(
-//                   image: AssetImage('assets/images/bg lapangan.jpeg'),
-//                   fit: BoxFit.cover)),
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.start,
-//             children: [
-//               const Text(
-//                 "MV Arena.",
-//                 style: TextStyle(
-//                     fontWeight: FontWeight.w600,
-//                     color: Colors.white,
-//                     fontSize: 32,
-//                     fontStyle: FontStyle.normal),
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               Stack(
-//                 children: [
-//                   Center(
-//                     child: Image.asset(
-//                       'images/lapangan3.jpg',
-//                       height: 150,
-//                       fit: BoxFit.cover,
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "Fasilitas:",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 32,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 20,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Toilet",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Bola",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Warung",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- Tribun",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "- View Indah",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     "Harga : Rp.400.000 per jam",
-//                     style: TextStyle(
-//                         fontWeight: FontWeight.w600,
-//                         color: Colors.white,
-//                         fontSize: 20,
-//                         fontStyle: FontStyle.normal),
-//                   ),
-//                 ],
-//               ),
-//               const Row(
-//                 mainAxisAlignment: MainAxisAlignment.end,
-//                 children: [
-//                   Icon(Icons.add_chart),
-//                 ],
-//               )
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
     return Scaffold(
       backgroundColor: const Color.fromARGB(108, 231, 231, 231),
       body: SingleChildScrollView(
@@ -168,7 +20,7 @@ class Lapangan3 extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "assets/images/lapangan1.jpg",
+                      "images/lapangan2.jpg",
                     ),
                     fit: BoxFit.cover),
               ),
@@ -365,10 +217,8 @@ class Lapangan3 extends StatelessWidget {
               onTap: () {},
               child: MaterialButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Booking()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Booking()));
                 },
                 child: Container(
                     height: 50,

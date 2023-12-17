@@ -1,140 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
-// import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
-// import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
-
-// class Dashboard extends StatelessWidget {
-//   const Dashboard({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         bottomNavigationBar:
-//             NavigationBar(height: 60, elevation: 0, destinations: [
-//           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-//           NavigationDestination(icon: Icon(Icons.favorite), label: 'Likes'),
-//           NavigationDestination(icon: Icon(Icons.person), label: 'Profile')
-//         ]),
-//         body: Container(
-//           width: double.infinity,
-//           height: double.infinity,
-//           decoration: const BoxDecoration(
-//               image: DecorationImage(
-//                   image: AssetImage('assets/images/bg lapangan.jpeg'),
-//                   fit: BoxFit.cover)),
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               const Text(
-//                 "Silahkan Pilih Lapangan.",
-//                 style: TextStyle(
-//                     fontWeight: FontWeight.w600,
-//                     color: Colors.white,
-//                     fontSize: 32,
-//                     fontStyle: FontStyle.normal),
-//               ),
-//               const SizedBox(
-//                 height: 70,
-//               ),
-//               Stack(
-//                 children: [
-//                   Center(
-//                     child: InkWell(
-//                       child: Image.asset(
-//                         'images/lapangan1.jpg',
-//                         height: 150,
-//                         fit: BoxFit.cover,
-//                       ),
-//                       onTap: () {
-//                         Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                                 builder: (context) => const Lapangan1()));
-//                       },
-//                     ),
-//                   ),
-//                   const Center(
-//                     child: Text(
-//                       'Soccer Republic Pasteur',
-//                       style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 15,
-//                           fontStyle: FontStyle.normal),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 20,
-//               ),
-//               Stack(
-//                 children: [
-//                   Center(
-//                     child: InkWell(
-//                       child: Image.asset(
-//                         'images/lapangan2.jpg',
-//                         height: 200,
-//                         fit: BoxFit.cover,
-//                       ),
-//                       onTap: () {
-//                         Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                                 builder: (context) => const Lapangan2()));
-//                       },
-//                     ),
-//                   ),
-//                   const Center(
-//                     child: Text(
-//                       'Rooftop Mini Soccer',
-//                       style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 15,
-//                           fontStyle: FontStyle.normal),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(
-//                 height: 20,
-//               ),
-//               Stack(
-//                 children: [
-//                   Center(
-//                     child: InkWell(
-//                       child: Image.asset(
-//                         'images/lapangan3.jpg',
-//                         height: 200,
-//                         fit: BoxFit.cover,
-//                       ),
-//                       onTap: () {
-//                         Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                                 builder: (context) => const Lapangan3()));
-//                       },
-//                     ),
-//                   ),
-//                   const Center(
-//                     child: Text(
-//                       '',
-//                       style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 15,
-//                           fontStyle: FontStyle.normal),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
@@ -249,7 +112,7 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'assets/images/lapangan1.jpg',
+                                        'images/lapangan3.jpg',
                                         height: 150,
                                         fit: BoxFit.none,
                                       ),
@@ -258,7 +121,7 @@ class Dashboard extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const Lapangan3()));
+                                                    const Lapangan2()));
                                       },
                                     ),
                                   ),
@@ -282,7 +145,7 @@ class Dashboard extends StatelessWidget {
                                         ]),
                                     child: InkWell(
                                       child: Image.asset(
-                                        'assets/images/lapangan1.jpg',
+                                        'images/lapangan2.jpg',
                                         height: 150,
                                         fit: BoxFit.none,
                                       ),
@@ -291,7 +154,7 @@ class Dashboard extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const Lapangan2()));
+                                                    const Lapangan3()));
                                       },
                                     ),
                                   ),
@@ -392,7 +255,7 @@ class Dashboard extends StatelessWidget {
                                                         context,
                                                         MaterialPageRoute(
                                                             builder: (context) =>
-                                                                const Lapangan1()));
+                                                                const Lapangan2()));
                                                   }),
                                             ],
                                           ),
@@ -423,7 +286,7 @@ class Dashboard extends StatelessWidget {
                                       children: [
                                         InkWell(
                                           child: Image.asset(
-                                            'assets/images/lapangan1.jpg',
+                                            'images/lapangan3.jpg',
                                             height: 100,
                                             width: 150,
                                           ),
@@ -500,7 +363,7 @@ class Dashboard extends StatelessWidget {
                                       children: [
                                         InkWell(
                                           child: Image.asset(
-                                            'assets/images/lapangan1.jpg',
+                                            'images/lapangan2.jpg',
                                             height: 100,
                                             width: 150,
                                           ),

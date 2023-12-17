@@ -20,7 +20,7 @@ class Lapangan1 extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "assets/images/lapangan1.jpg",
+                      "images/lapangan1.jpg",
                     ),
                     fit: BoxFit.cover),
               ),
@@ -223,25 +223,23 @@ class Lapangan1 extends StatelessWidget {
               onTap: () {},
               child: MaterialButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Booking()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Booking()));
                 },
                 child: Container(
-                    height: 50,
-                    decoration: BoxDecoration(
-                        color: const Color.fromARGB(104, 11, 1, 12),
-                        borderRadius: BorderRadius.circular(5)),
-                    child: const Center(
-                      child: Text("Booking",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
+                  height: 50,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(104, 11, 1, 12),
+                      borderRadius: BorderRadius.circular(5)),
+                  child: const Center(
+                    child: Text(
+                      "Booking",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
                       ),
-
                     ),
+                  ),
                 ),
               ),
             )
