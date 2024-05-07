@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 import 'package:uas_ppb_3/screens/home.dart';
 import 'package:uas_ppb_3/screens/log%20in.dart';
 
@@ -11,200 +13,94 @@ class SignIn extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            'assets/images/bg lapangan.jpeg',
+            'assets/images/Basketball court.jpeg',
             height: MediaQuery.of(context).size.height,
             fit: BoxFit.cover,
           ),
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
-              //decoration:
-              //const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
+              decoration:
+                  const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: MaterialButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(5),
+                        height: 35,
+                        width: 35,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.arrow_back,
+                            color: Colors.black,
+                            size: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                   const Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Mini Soccer Spot Finder Bandung",
+                        "Pengenalan Permainan Bola Basket",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                          fontSize: 20,
+                          backgroundColor: Colors.yellow,
+                          color: Colors.black,
+                          fontSize: 15,
                           fontStyle: FontStyle.normal,
                         ),
                       ),
                     ],
                   ),
                   const SizedBox(
-                    height: 70,
+                    height: 20,
                   ),
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "HAI! SELAMAT DATANG",
+                        "AYO PILIH MAU LATIHAN APA?",
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                            fontSize: 32,
-                            fontStyle: FontStyle.normal),
-                      ),
-                      Text(
-                        "Ayo bikin akunnya!",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 17,
+                            color: Colors.black,
+                            fontSize: 20,
+                            backgroundColor: Colors.yellow,
                             fontStyle: FontStyle.normal),
                       ),
                     ],
                   ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      //suffixIcon: Icon(Icons.email, color: Colors.white),
-                      label: Text(
-                        'Email or Phone Number',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
+                  const SizedBox(
+                    height: 130,
+                    width: 200,
                   ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                     // suffixIcon: Icon(Icons.password_outlined),
-                      label: Text(
-                        'Full Name',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
+                  Image.asset(
+                    'images/passing.png',
+                    fit: BoxFit.cover,
+                    width: 250,
+                    height: 100,
                   ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      //suffixIcon: Icon(Icons.password_outlined),
-                      label: Text(
-                        'Username',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
-                  ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      //suffixIcon: Icon(Icons.password_outlined),
-                      label: Text(
-                        'Password',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
-                  ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                     // suffixIcon: Icon(Icons.password_outlined),
-                      label: Text(
-                        'Confirm Password',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
-                  ),
-                  // Container(
-                  //   height: 25,
-                  //   width: 150,
-                  //   decoration: BoxDecoration(
-                  //       borderRadius: BorderRadius.circular(30),
-                  //       gradient: const LinearGradient(colors: [
-                  //         Colors.white,
-                  //         Colors.white,
-                  //       ])),
-                  //   child: const Center(child: Text('Sign In')),
-                  // ),
-                  // Column(
-                  //   crossAxisAlignment: CrossAxisAlignment.center,
-                  //   mainAxisAlignment: MainAxisAlignment.center,
-                  //   children: [
-                  //     const Row(
-                  //       mainAxisAlignment: MainAxisAlignment.center,
-                  //       children: [
-                  //         Icon(
-                  //           Icons.circle_rounded,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 255, 255, 255),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           width: 10,
-                  //         ),
-                  //         Icon(
-                  //           Icons.circle,
-                  //           color: Color.fromARGB(255, 129, 127, 127),
-                  //           size: 10,
-                  //         ),
-                  //         SizedBox(
-                  //           height: 100,
-                  //         )
-                  //       ],
-                  //     ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       SizedBox(
                         width: 150.0,
@@ -215,18 +111,27 @@ class SignIn extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Home()));
+                                      builder: (context) => const Lapangan2()));
                             },
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(
-                                width: 2,
-                                color: Colors.white,
-                              ),
+                                  width: 2, color: Colors.black),
                               foregroundColor: Colors.white,
+                              backgroundColor: Colors.deepOrange,
                             ),
-                            child: const Text('Log In'),
+                            child: const Text('MENGUMPAN'),
                           ),
                         ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                        width: 200,
+                      ),
+                      Image.asset(
+                        'images/shooting.png',
+                        fit: BoxFit.cover,
+                        width: 250,
+                        height: 100,
                       ),
                       SizedBox(
                         width: 150.0,
@@ -234,18 +139,24 @@ class SignIn extends StatelessWidget {
                         child: SizedBox.expand(
                           child: OutlinedButton(
                             onPressed: () {
-                              debugPrint('Received click');
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Lapangan3()));
                             },
                             style: OutlinedButton.styleFrom(
                               side: const BorderSide(
-                                  width: 2, color: Colors.white),
-                              foregroundColor: Colors.black,
-                              backgroundColor: Colors.white,
+                                  width: 2, color: Colors.black),
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.deepOrange,
                             ),
-                            child: const Text('Sign Up'),
+                            child: const Text('MENEMBAK'),
                           ),
                         ),
-                      )
+                      ),
+                      const SizedBox(
+                        height: 120,
+                      ),
                     ],
                   ),
                 ],

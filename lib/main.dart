@@ -1,9 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/firebase_options.dart';
-import 'package:uas_ppb_3/menu/booking.dart';
-
 import 'package:uas_ppb_3/screens/home.dart';
+import 'package:uas_ppb_3/screens/sign%20in.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MINI SOCCER SPOT FINDER BANDUNG',
+      title: 'Tugas Akhir',
       theme: ThemeData(),
       home: const Home(),
     );

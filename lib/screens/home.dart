@@ -1,4 +1,6 @@
+import 'dart:html';
 import 'package:flutter/material.dart';
+import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 import 'package:uas_ppb_3/menu/dashboard.dart';
 import 'package:uas_ppb_3/screens/log%20in.dart';
 import 'package:uas_ppb_3/screens/sign%20in.dart';
@@ -12,161 +14,125 @@ class Home extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            'assets/images/bg lapangan.jpeg',
+            'assets/images/Basketball court.jpeg',
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
           ),
-
           Column(
             children: [
               Flexible(
-                  child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: const TextSpan(children: [
-                    TextSpan(
-                      text: "Mini Soccer Spot Finder Bandung",
-                      style: TextStyle(
-                        fontFamily: "afacad",
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                        fontSize: 32,
-                        fontStyle: FontStyle.normal,
-                      ),
-                    )
-                  ]),
-                ),
-              )),
-            ],
-          ),
-          Container(
-              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
-              //decoration:
-              //const BoxDecoration(color: Color.fromARGB(132, 43, 43, 43)),
-
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  ),
-                  const SizedBox(
-                    height: 80,
-                  ),
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "HAI! SELAMAT DATANG",
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 56),
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: const TextSpan(children: [
+                      TextSpan(
+                        text: "Pengenalan Permainan Bola Basket",
                         style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                            fontSize: 32,
-                            fontStyle: FontStyle.normal),
-                      ),
-                      Text(
-                        "Ayo bikin akunnya!",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 17,
-                            fontStyle: FontStyle.normal),
-                      ),
-                    ],
-                  ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      suffixIcon: Icon(Icons.email, color: Colors.white),
-                      label: Text(
-                        'Enter Username',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
-                  ),
-                  const TextField(
-                    decoration: InputDecoration(
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)),
-                      suffixIcon:
-                          Icon(Icons.password_outlined, color: Colors.white),
-                      label: Text(
-                        'Password',
-                        style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            color: Color.fromARGB(255, 255, 255, 255)),
-                      ),
-                    ),
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        color: Color.fromARGB(255, 255, 255, 255)),
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: 150.0,
-                        height: 50.0,
-                        child: SizedBox.expand(
-                          child: OutlinedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const Dashboard()));
-                            },
-                            style: OutlinedButton.styleFrom(
-                              side: const BorderSide(
-                                width: 2,
-                                color: Colors.white,
-                              ),
-                              foregroundColor: Colors.white,
-                            ),
-                            child: const Text('Log In'),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 150.0,
-                        height: 50.0,
-                        child: SizedBox.expand(
-                          child: OutlinedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const SignIn()));
-                            },
-                            style: OutlinedButton.styleFrom(
-                              side: const BorderSide(
-                                  width: 2, color: Colors.white),
-                              foregroundColor: Colors.black,
-                              backgroundColor: Colors.white,
-                            ),
-                            child: const Text('Sign Up'),
-                          ),
+                          fontFamily: "cursive",
+                          fontWeight: FontWeight.w600,
+                          backgroundColor: Colors.yellow,
+                          color: Colors.black,
+                          textBaseline: TextBaseline.ideographic,
+                          fontSize: 32,
+                          fontStyle: FontStyle.normal,
                         ),
                       )
-                    ],
+                    ]),
                   ),
-                ],
-              )
-              //  ],
+                ),
               ),
+              const SizedBox(
+                height: 45,
+              ),
+              Image.asset(
+                'assets/images/bball.png',
+                fit: BoxFit.cover,
+                width: 250,
+                height: 300,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  SizedBox(
+                    width: 150.0,
+                    height: 50.0,
+                    child: SizedBox.expand(
+                      child: OutlinedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const SignIn()));
+                        },
+                        style: OutlinedButton.styleFrom(
+                          side: const BorderSide(
+                              width: 2, color: Colors.greenAccent),
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.green,
+                        ),
+                        child: const Text('AYO MULAI!'),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 150.0,
+                    height: 50.0,
+                    child: SizedBox.expand(
+                      child: OutlinedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Lapangan1()));
+                        },
+                        style: OutlinedButton.styleFrom(
+                          side:
+                              const BorderSide(width: 2, color: Colors.orange),
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.yellow[900],
+                        ),
+                        child: const Text('BIKIN AVATARMU!'),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 150.0,
+                    height: 50.0,
+                    child: SizedBox.expand(
+                      child: OutlinedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Home()));
+                        },
+                        style: OutlinedButton.styleFrom(
+                          side: const BorderSide(
+                              width: 2, color: Colors.redAccent),
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.red[700],
+                        ),
+                        child: const Text('KELUAR?'),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
           //  ),
         ],
       ),

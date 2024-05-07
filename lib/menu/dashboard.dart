@@ -2,6 +2,7 @@ import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 import 'package:flutter/material.dart';
+import 'package:uas_ppb_3/menu/lapangan.dart';
 import 'package:uas_ppb_3/screens/home.dart';
 
 class Dashboard extends StatelessWidget {
@@ -207,6 +208,7 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
+<<<<<<< Updated upstream
                                         Expanded(
                                           child: InkWell(
                                             child: Image.asset(
@@ -221,6 +223,13 @@ class Dashboard extends StatelessWidget {
                                                       builder: (context) =>
                                                           const Lapangan1()));
                                             },
+=======
+                                        InkWell(
+                                          child: Image.asset(
+                                            'assets/images/lapangan1.jpg',
+                                            height: 100,
+                                            width: 150,
+>>>>>>> Stashed changes
                                           ),
                                         ),
                                         Expanded(
@@ -285,6 +294,7 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
+<<<<<<< Updated upstream
                                         Expanded(
                                           child: InkWell(
                                             child: Image.asset(
@@ -299,6 +309,13 @@ class Dashboard extends StatelessWidget {
                                                       builder: (context) =>
                                                           const Lapangan2()));
                                             },
+=======
+                                        InkWell(
+                                          child: Image.asset(
+                                            'assets/images/lapangan2.jpg',
+                                            height: 120,
+                                            width: 150,
+>>>>>>> Stashed changes
                                           ),
                                         ),
                                         Expanded(
@@ -363,6 +380,7 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
+<<<<<<< Updated upstream
                                         Expanded(
                                           child: InkWell(
                                             child: Image.asset(
@@ -377,6 +395,13 @@ class Dashboard extends StatelessWidget {
                                                       builder: (context) =>
                                                           const Lapangan3()));
                                             },
+=======
+                                        InkWell(
+                                          child: Image.asset(
+                                            'assets/images/lapangan3.jpg',
+                                            height: 120,
+                                            width: 150,
+>>>>>>> Stashed changes
                                           ),
                                         ),
                                         Expanded(

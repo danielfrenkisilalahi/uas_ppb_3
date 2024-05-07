@@ -1,8 +1,8 @@
 plugins {
-    id "com.android.application"
-    id "kotlin-android"
-    id "dev.flutter.flutter-gradle-plugin"
-}
+      id "com.android.application"
+      id "kotlin-android"
+       id "dev.flutter.flutter-gradle-plugin"
+    }
 
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
@@ -12,15 +12,7 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
-}
 
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
-}
 
 android {
     namespace "com.example.uas_ppb_3"
@@ -64,4 +56,6 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {dependencies {
+     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}}
