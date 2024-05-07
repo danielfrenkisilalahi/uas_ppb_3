@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uas_ppb_3/screens/log%20in.dart';
 
 class LogIn extends StatelessWidget {
   const LogIn({super.key});

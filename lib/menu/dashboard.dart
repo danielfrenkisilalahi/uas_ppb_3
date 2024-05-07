@@ -2,7 +2,6 @@ import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 import 'package:flutter/material.dart';
-import 'package:uas_ppb_3/menu/lapangan.dart';
 import 'package:uas_ppb_3/screens/home.dart';
 
 class Dashboard extends StatelessWidget {
@@ -208,68 +207,68 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
-<<<<<<< Updated upstream
                                         Expanded(
-                                          child: InkWell(
-                                            child: Image.asset(
-                                              'assets/images/lapangan1.jpg',
-                                              height: 100,
-                                              width: 150,
-                                            ),
-                                            onTap: () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          const Lapangan1()));
-                                            },
-=======
-                                        InkWell(
-                                          child: Image.asset(
-                                            'assets/images/lapangan1.jpg',
-                                            height: 100,
-                                            width: 150,
->>>>>>> Stashed changes
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              const Text(
-                                                "Soccer Republic Pasteur",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                  fontFamily: "Ruluko",
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                              const Text(
-                                                "Harga : Rp. 375.000",
-                                                style: TextStyle(
-                                                    fontSize: 15,
-                                                    color: Colors.red),
-                                              ),
-                                              InkWell(
-                                                  child: const Text(
-                                                    "Lihat detail",
-                                                    style: TextStyle(
-                                                      fontSize: 15,
-                                                    ),
+                                            child: InkWell(
+                                                child: Image.asset(
+                                                  'assets/images/lapangan1.jpg',
+                                                  height: 100,
+                                                  width: 150,
+                                                ), onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Lapangan1()));
+                                        },
+                                                InkWell(
+                                                  child: Image.asset(
+                                                    'assets/images/lapangan1.jpg',
+                                                    height: 100,
+                                                    width: 150,
                                                   ),
-                                                  onTap: () {
-                                                    Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                            builder: (context) =>
-                                                                const Lapangan1()));
-                                                  }),
-                                            ],
-                                          ),
-                                        )
+                                                ),
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceAround,
+                                                    children: [
+                                                      const Text(
+                                                        "Soccer Republic Pasteur",
+                                                        style: TextStyle(
+                                                          fontSize: 15,
+                                                          fontFamily: "Ruluko",
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      const Text(
+                                                        "Harga : Rp. 375.000",
+                                                        style: TextStyle(
+                                                            fontSize: 15,
+                                                            color: Colors.red),
+                                                      ),
+                                                      InkWell(
+                                                          child: const Text(
+                                                            "Lihat detail",
+                                                            style: TextStyle(
+                                                              fontSize: 15,
+                                                            ),
+                                                          ),
+                                                          onTap: () {
+                                                            Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder:
+                                                                        (context) =>
+                                                                            const Lapangan1()));
+                                                          }),
+                                                    ],
+                                                  ),
+                                                )))
                                       ],
                                     ),
                                   ),
@@ -294,68 +293,68 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
-<<<<<<< Updated upstream
                                         Expanded(
-                                          child: InkWell(
-                                            child: Image.asset(
-                                              'assets/images/lapangan3.jpg',
-                                              height: 100,
-                                              width: 150,
-                                            ),
-                                            onTap: () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          const Lapangan2()));
-                                            },
-=======
-                                        InkWell(
-                                          child: Image.asset(
-                                            'assets/images/lapangan2.jpg',
-                                            height: 120,
-                                            width: 150,
->>>>>>> Stashed changes
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              const Text(
-                                                "MV Arena",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                  fontFamily: "Ruluko",
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                              const Text(
-                                                "Harga : Rp. 400.000",
-                                                style: TextStyle(
-                                                    fontSize: 15,
-                                                    color: Colors.red),
-                                              ),
-                                              InkWell(
-                                                  child: const Text(
-                                                    "Lihat detail",
-                                                    style: TextStyle(
-                                                      fontSize: 15,
-                                                    ),
+                                            child: InkWell(
+                                                child: Image.asset(
+                                                  'assets/images/lapangan3.jpg',
+                                                  height: 100,
+                                                  width: 150,
+                                                ), onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Lapangan2()));
+                                        },
+                                                InkWell(
+                                                  child: Image.asset(
+                                                    'assets/images/lapangan2.jpg',
+                                                    height: 120,
+                                                    width: 150,
                                                   ),
-                                                  onTap: () {
-                                                    Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                            builder: (context) =>
-                                                                const Lapangan2()));
-                                                  }),
-                                            ],
-                                          ),
-                                        )
+                                                ),
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceAround,
+                                                    children: [
+                                                      const Text(
+                                                        "MV Arena",
+                                                        style: TextStyle(
+                                                          fontSize: 15,
+                                                          fontFamily: "Ruluko",
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      const Text(
+                                                        "Harga : Rp. 400.000",
+                                                        style: TextStyle(
+                                                            fontSize: 15,
+                                                            color: Colors.red),
+                                                      ),
+                                                      InkWell(
+                                                          child: const Text(
+                                                            "Lihat detail",
+                                                            style: TextStyle(
+                                                              fontSize: 15,
+                                                            ),
+                                                          ),
+                                                          onTap: () {
+                                                            Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder:
+                                                                        (context) =>
+                                                                            const Lapangan2()));
+                                                          }),
+                                                    ],
+                                                  ),
+                                                )))
                                       ],
                                     ),
                                   ),
@@ -380,68 +379,68 @@ class Dashboard extends StatelessWidget {
                                     ),
                                     child: Row(
                                       children: [
-<<<<<<< Updated upstream
                                         Expanded(
-                                          child: InkWell(
-                                            child: Image.asset(
-                                              'assets/images/lapangan2.jpg',
-                                              height: 100,
-                                              width: 150,
-                                            ),
-                                            onTap: () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          const Lapangan3()));
-                                            },
-=======
-                                        InkWell(
-                                          child: Image.asset(
-                                            'assets/images/lapangan3.jpg',
-                                            height: 120,
-                                            width: 150,
->>>>>>> Stashed changes
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceAround,
-                                            children: [
-                                              const Text(
-                                                "Rooftop Arena",
-                                                style: TextStyle(
-                                                  fontSize: 15,
-                                                  fontFamily: "Ruluko",
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                              const Text(
-                                                "Harga : Rp. 700.000",
-                                                style: TextStyle(
-                                                    fontSize: 15,
-                                                    color: Colors.red),
-                                              ),
-                                              InkWell(
-                                                  child: const Text(
-                                                    "Lihat detail",
-                                                    style: TextStyle(
-                                                      fontSize: 15,
-                                                    ),
+                                            child: InkWell(
+                                                child: Image.asset(
+                                                  'assets/images/lapangan2.jpg',
+                                                  height: 100,
+                                                  width: 150,
+                                                ), onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Lapangan3()));
+                                        },
+                                                InkWell(
+                                                  child: Image.asset(
+                                                    'assets/images/lapangan3.jpg',
+                                                    height: 120,
+                                                    width: 150,
                                                   ),
-                                                  onTap: () {
-                                                    Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                            builder: (context) =>
-                                                                const Lapangan3()));
-                                                  }),
-                                            ],
-                                          ),
-                                        )
+                                                ),
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceAround,
+                                                    children: [
+                                                      const Text(
+                                                        "Rooftop Arena",
+                                                        style: TextStyle(
+                                                          fontSize: 15,
+                                                          fontFamily: "Ruluko",
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                      const Text(
+                                                        "Harga : Rp. 700.000",
+                                                        style: TextStyle(
+                                                            fontSize: 15,
+                                                            color: Colors.red),
+                                                      ),
+                                                      InkWell(
+                                                          child: const Text(
+                                                            "Lihat detail",
+                                                            style: TextStyle(
+                                                              fontSize: 15,
+                                                            ),
+                                                          ),
+                                                          onTap: () {
+                                                            Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder:
+                                                                        (context) =>
+                                                                            const Lapangan3()));
+                                                          }),
+                                                    ],
+                                                  ),
+                                                )))
                                       ],
                                     ),
                                   ),

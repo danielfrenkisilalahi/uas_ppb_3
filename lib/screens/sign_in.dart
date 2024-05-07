@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan2.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan3.dart';
 import 'package:uas_ppb_3/screens/home.dart';
-import 'package:uas_ppb_3/screens/log%20in.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({super.key});

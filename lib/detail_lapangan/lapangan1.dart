@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
-import 'package:uas_ppb_3/main.dart';
-import 'package:uas_ppb_3/menu/dashboard.dart';
 import 'package:uas_ppb_3/screens/home.dart';
 
 class Lapangan1 extends StatelessWidget {
@@ -26,32 +23,32 @@ class Lapangan1 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InkWell(
-                onTap: () {
-                  Navigator.pop(context);
-                },
-                child: MaterialButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const Home()));
+                  onTap: () {
+                    Navigator.pop(context);
                   },
-                  child: Container(
-                    margin: const EdgeInsets.all(5),
-                    height: 35,
-                    width: 35,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.arrow_back,
-                        color: Colors.black,
-                        size: 20,
+                  child: MaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Home()));
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.all(5),
+                      height: 35,
+                      width: 35,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Colors.black,
+                          size: 20,
+                        ),
                       ),
                     ),
-<<<<<<< Updated upstream
-                  ),
-=======
                   )),
               Padding(
                 padding: const EdgeInsets.all(16),
@@ -59,7 +56,6 @@ class Lapangan1 extends StatelessWidget {
                   'images/lapangan1.jpg',
                   height: 120,
                   width: 150,
->>>>>>> Stashed changes
                 ),
               ),
               const Row(

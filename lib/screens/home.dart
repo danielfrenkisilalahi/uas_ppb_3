@@ -1,9 +1,6 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
-import 'package:uas_ppb_3/menu/dashboard.dart';
-import 'package:uas_ppb_3/screens/log%20in.dart';
-import 'package:uas_ppb_3/screens/sign%20in.dart';
+import 'package:uas_ppb_3/screens/sign_in.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

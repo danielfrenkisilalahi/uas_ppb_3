@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uas_ppb_3/detail_lapangan/lapangan1.dart';
-import 'package:uas_ppb_3/main.dart';
-import 'package:uas_ppb_3/menu/dashboard.dart';
-import 'package:uas_ppb_3/screens/home.dart';
-import 'package:uas_ppb_3/screens/sign%20in.dart';
+import 'package:uas_ppb_3/screens/sign_in.dart';
 
 class Lapangan3 extends StatelessWidget {
   const Lapangan3({super.key});
